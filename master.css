@@ -1,0 +1,97 @@
+*{
+  font-family: "Times New Roman", "Georgia", "Didot";
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to bottom, #2e2e2e, #000000);
+  min-height: 100vh;
+  margin: 0;
+  color: #f2f2f2;
+} 
+
+/* ================== MENU ================== */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #181818;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 200%;
+}
+
+.shadow:hover{
+  text-shadow: 0px 0px 20px #006666;
+}
+
+
+/* ================== BODY ================== */
+body {
+  margin: 0;
+  padding-top: 40px; /* РЕАЛЬНИЙ ВІДСТУП ПІД МЕНЮ */
+} 
+
+/* ================== INFO BLOCK ================== */
+
+#inform{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1200px;
+  margin: 120px auto 0 auto; /* відступ від меню і центр */
+  padding: 3%;
+
+  gap: 50px;
+}
+
+.text{
+  flex: 1;
+}
+
+.text h1{
+  font-size: 60px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.text p{
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.masterPhoto{
+  width: 400px;
+  border-radius: 20px;
+
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.masterPhoto:hover{
+  transform: scale(1.07);
+  box-shadow: 0px 0px 40px #006666;
+}
+
+.text h1:hover{
+  text-shadow: 0px 0px 25px #006666;
+}
+
+.zag-phone{
+  display: none;
+}

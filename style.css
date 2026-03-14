@@ -1,0 +1,384 @@
+*{
+  font-family: "Times New Roman", "Georgia", "Didot";
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to bottom, #2e2e2e, #000000);
+  min-height: 100vh;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+#tel{
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Фото */
+#fB{
+  border-radius: 2%;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 10px 10px 12px rgb(10, 10, 10);
+  transition: box-shadow 0.5s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s;
+}
+
+#fB:hover{
+  box-shadow: 0 0 20px 1px #006666;
+  transform: scale(1.05);
+}
+
+
+/* Соцмережі */
+.sn{
+  width: 100px;
+  object-fit: cover;
+  border-radius: 25%;
+  display: block;
+  box-shadow: 10px 10px 12px rgb(10, 10, 10);
+  transition: transform 0.5s;
+}
+
+.sn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 1px #006666;
+}
+
+#socialNetworks{
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+/* Текст */
+#TextBio{
+  font-size: 120%;
+  text-align: center;
+}
+
+/* Кнопка Next */
+.btnNext{
+  text-align: right;
+  padding: 10px;
+}
+
+.next{
+  width: 100%;
+  max-width: 100px;
+}
+
+.btns{
+  position: relative;
+}
+
+.next{
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7%;
+}
+
+/* ================== MENU ================== */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #181818;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 200%;
+}
+
+/* ================== BODY ================== */
+body {
+  margin: 0;
+  padding-top: 120px; /* РЕАЛЬНИЙ ВІДСТУП ПІД МЕНЮ */
+}
+
+/* ================== WORKS SECTION ================== */
+.works {
+  min-height: calc(100vh - 70px); /* весь екран МІНУС меню */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ЦЕНТР ПО ВЕРТИКАЛІ */
+  align-items: center;
+
+  padding: 20px;
+}
+
+/* ================== TITLE ================== */
+.works-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+/* ================== GRID ================== */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ================== CARDS ================== */
+.work-card {
+  position: relative;
+  aspect-ratio: 1 / 1; /* КВАДРАТ */
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5%;
+}
+
+.work-card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 12px;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.work-card:hover {
+  box-shadow: 0 0 30px 1px #006666;
+  transform: scale(1.09);
+}
+
+.shadow:hover{
+  text-shadow: 0px 0px 20px #00e6e6;
+}
+
+
+
+#inform{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 300px; 
+
+  margin-left: 5%;
+}
+
+.text{
+  font-size: 150%;
+  max-width: 600px;
+}
+
+.text p{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.masterPhoto{
+  width: 40%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 12px rgb(10,10,10);
+  transition: transform 0.5s;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+.masterPhoto:hover{
+  box-shadow: 0 0 20px 1px #ebffe6;
+  transform: scale(1.09);
+}
+
+
+h1{
+  display: block;
+}
+
+h1:hover{
+  filter: drop-shadow(0 0 15px #5ff35f);
+}
+
+
+
+/*sections */ 
+
+.block {
+  min-height: calc(100vh - 110px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10%;
+}
+
+.left{
+    width: 20%;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.center{
+    width: 23%;
+    transition: 0.5s;
+}
+
+/* ⭐ ГОЛОВНИЙ ФІКС */
+.net {
+  width: 20%;              /* тепер % мають сенс */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5%;
+  justify-items: center;
+}
+
+/* картинки */
+.net img {
+  width: 100%;
+  display: block;
+  border-radius: 5%;
+  transition: 0.5s;
+}
+
+
+.left:hover,
+.center:hover,
+.net img:hover {
+  transform: scale(1.1); /* збільшення */
+  filter: drop-shadow(0 0 15px #006666 /*ccffcc*/);
+}
+
+/* form*/
+label {
+  display: none;
+}
+
+#links {
+    display: flex;
+    justify-content: center; /* по центру */
+    gap: 30px;               /* однакова відстань */
+    align-items: center;
+}
+
+.apps {
+    width: 50px; /* або свій розмір */
+    border-radius: 15%;
+}
+
+#links .apps:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 1px #66002b;
+}
+
+#zapis {
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* відступи від країв екрана */
+}
+
+#left{
+  display: flex;
+  flex-direction: column; /* елементи один під одним */
+  align-items: center; 
+  padding-top: 1%;
+  padding-left: 15%;
+}
+
+
+#right{
+  text-align: center; 
+  background-color: #000000;
+  border-radius: 15%;
+  padding: 2%;
+}
+
+#appeal h1 {
+  padding: 10%;
+  margin-bottom: 10vh;            /* p близько */
+}
+
+/* текст */
+#appeal p {
+  font-size: 150%;
+  margin-bottom: 20vh;           /* кнопка нижче середини */
+}
+
+/* кнопка */
+.btnZapis {
+  padding: 22px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Times New Roman", "Georgia", "Didot";
+
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 200%;
+  cursor: pointer;
+  color: #006666;
+
+  transition: 0.3s;
+}
+
+.btnZapis:hover {
+  opacity: 0.6;
+}
+
+#zapis h1{
+  font-size: 300%;
+}
+
+form{
+  text-align: center;
+  font-family: "Times New Roman", "Georgia", "Didot";
+}
+
+input, select{
+  font-size: 150%;
+  font-family: "Times New Roman", "Georgia", "Didot";
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}

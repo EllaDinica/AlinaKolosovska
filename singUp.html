@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Alina_Kolosovska</title>
+</head>
+<body>
+
+    <header class="menu">
+        <nav>
+            <a href="index.html"><span class="shadow">Головна</span></a>
+            <a href="menu.html"><span class="shadow">Послуги</span></a>
+            <a href="brows.html"><span class="shadow">Брови</span></a>
+            <a href="makeUp.html"><span class="shadow">Макіяж</span></a>
+            <a href="eyelashes.html"><span class="shadow">Вії</span></a>
+            <a href="perm.html"><span class="shadow">Перманент</span></a>
+            <a href="master.html"><span class="shadow">Про майстра</span></a>
+            <a href="singUp.html" style="color: rgb(109, 108, 108);"><span class="shadow">Записатися</span></a>
+        </nav>
+    </header>
+
+    <a href="menu.html" class="burger">☰</a>
+
+    <span class="zag-phone">ЗАПИСАТИСЯ</span>
+
+    <br>
+    <br>
+
+<div id="zapis">
+
+    <div id="left">
+        
+        <h1>ЗАПИС</h1>
+        <div id="links">
+            <a href="https://www.tiktok.com/@kolosovska_brows" target="_blank"><img src="tt.png" class="apps"></a>
+            <a href="https://www.instagram.com/alinakolosovskaa/" target="_blank"><img src="inst.png" class="apps"></a>
+            <a href="https://t.me/kolosovska_m" target="_blank"><img src="tel.png" class="apps"></a>
+        </div>
+    
+        <form autocomplete="on" action="https://formspree.io/f/xeelozgz" method="POST">
+            
+            <div id="formName">
+                <label for="name">Ваше ім'я та прізвище:</label><br>
+                <input id="name" type="text" name="Ім'я та прізвище" placeholder="Уведіть Ваше ім'я та прізвище" required>
+            </div>
+        
+            <div id="formTel">
+                <label for="tel">Ваш номер телефону:</label><br>
+                <input id="tel" type="tel" name="Номер телефону" placeholder="Уведіть Ваш номер телефону" required>
+            </div>
+        
+            <div id="formPos">
+                <label for="pos">Оберіть Потрібну Вам послугу:</label><br>
+                <select id="pos" name="Послуга" required>
+                    <option value="Оформлення брів">Офомлення брів</option>
+                    <option value="Перманент брів">Перманент брів</option>
+                    <option value="Макіяж">Макіяж</option>
+                    <option value="Вії">Ламінування вій</option>
+                </select>
+            </div>
+        
+            <div id="formDet">
+                <label for="det">Ваші побажання або деталі:</label><br>
+                <input id="det" type="text" name="Побажання" placeholder="Уведіть Ваші побажання" required>
+            </div>
+        
+            <div id="formTime">
+                <label for="time">Зручна для Вас дата:</label><br>
+                <input id="time" type="text" name="Дата" placeholder="Уведіть зручну для Вас дату" required>
+            </div>
+        
+            <button type="submit" class="btnZapis">ЗАПИСАТИСЯ</button>
+        </form>
+    </div>
+     
+    <div id="right">
+        <div id="appeal">
+            <h1>ПРИВІТ, КРАСУНЕ!</h1>
+            <p>ЗАПИСУЙСЯ В БУДЬ-ЯКИЙ ЗРУЧНИЙ ДЛЯ ТЕБЕ ЧАС</p>
+        
+            <button type="submit" class="btnZapis">ЗАПИСУЙСЯ ШВИДШЕ</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
